@@ -1,0 +1,14 @@
+---
+import works from '../data/works.json';
+import SectionHeading from './SectionHeading.astro';
+import WorkCard from './WorkCard.astro';
+---
+
+<section class="layer-section" id="works" aria-labelledby="works-title">
+  <div class="container">
+    <SectionHeading number="01" title="Works" description="手を動かして確かめられる、実践的な成果物。" />
+    <div class="works-grid">
+      {works.map((work) => <WorkCard {...work} />)}
+    </div>
+  </div>
+</section>

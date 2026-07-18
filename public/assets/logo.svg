@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">DevStack DS logo</title>
+  <desc id="desc">A purple DS monogram framed by charcoal code brackets above three silver stacked layers.</desc>
+  <defs>
+    <linearGradient id="silverLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8E6EC"/>
+      <stop offset=".52" stop-color="#C7C4CE"/>
+      <stop offset="1" stop-color="#B1ACB8"/>
+    </linearGradient>
+    <linearGradient id="silverMid" x1="0" y1="0" x2="1" y2=".65">
+      <stop offset="0" stop-color="#C7C4CE"/>
+      <stop offset="1" stop-color="#A49EAA"/>
+    </linearGradient>
+    <linearGradient id="silverDark" x1="0" y1="0" x2="1" y2=".65">
+      <stop offset="0" stop-color="#A49EAA"/>
+      <stop offset="1" stop-color="#8D8792"/>
+    </linearGradient>
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#8A63BD" flood-opacity=".28"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M292 250 172 370l120 120M732 250l120 120-120 120" stroke="#2A2833" stroke-width="72"/>
+    <path d="M390 244v252h82c92 0 150-47 150-126s-58-126-150-126h-82Z" stroke="#3E3C4A" stroke-width="64"/>
+    <path d="M626 270c-24-22-57-34-94-34-51 0-86 24-86 62 0 94 184 42 184 137 0 43-41 70-99 70-42 0-80-15-106-42" stroke="#8A63BD" stroke-width="56" filter="url(#purpleGlow)"/>
+    <path d="m246 620 266-86 266 86-266 86-266-86Z" fill="url(#silverLight)" stroke="#8D8792" stroke-width="28"/>
+    <path d="m246 704 266 86 266-86" stroke="url(#silverMid)" stroke-width="48"/>
+    <path d="m246 788 266 86 266-86" stroke="url(#silverDark)" stroke-width="48"/>
+  </g>
+</svg>

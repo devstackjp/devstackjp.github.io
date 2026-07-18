@@ -1,0 +1,26 @@
+---
+import articles from '../data/articles.json';
+import SectionHeading from './SectionHeading.astro';
+---
+
+<section class="layer-section" id="articles" aria-labelledby="articles-title">
+  <div class="container">
+    <SectionHeading number="02" title="Articles" description="案件で迷ったときに立ち戻れる、技術ノート。" />
+    <div class="article-list">
+      {articles.map((article, index) => (
+        <article class:list={['article-row', { disabled: !article.url }]}>
+          <span class="article-index">{String(index + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>{article.title}</h3>
+            <p>{article.description}</p>
+          </div>
+          {article.url ? (
+            <a href={article.url} aria-label={`${article.title}を読む`}>Read <span aria-hidden="true">→</span></a>
+          ) : (
+            <span class="disabled-label" aria-label="リンクは準備中です">Preparing...</span>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

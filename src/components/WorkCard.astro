@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  url: string;
+  placeholder?: boolean;
+}
+
+const { title, description, tags, url, placeholder = false } = Astro.props;
+---
+
+<article class:list={['work-card', { placeholder }]}>
+  <div class="card-topline">
+    <span class="card-status">{placeholder ? 'QUEUED' : 'PUBLISHED'}</span>
+    <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+  </div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <div class="card-footer">
+    {tags.length > 0 && (
+      <ul class="tags" aria-label="使用技術">
+        {tags.map((tag) => <li>{tag}</li>)}
+      </ul>
+    )}
+    {url && <a class="card-link" href={url} target="_blank" rel="noreferrer" aria-label={`${title}を見る`}>View project <span aria-hidden="true">→</span></a>}
+  </div>
+</article>

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Docker入門: 最初のコンテナからcompose upまで",
+    "description": "Dockerの基本から複数コンテナを起動するところまで、手を動かして学べる入門教材です。",
+    "tags": ["Docker", "Compose"],
+    "url": "https://github.com/devstackjp/docker-first-container",
+    "placeholder": false
+  },
+  {
+    "title": "Coming soon",
+    "description": "次の実践コンテンツを準備しています。",
+    "tags": [],
+    "url": "",
+    "placeholder": true
+  },
+  {
+    "title": "Coming soon",
+    "description": "次の実践コンテンツを準備しています。",
+    "tags": [],
+    "url": "",
+    "placeholder": true
+  }
+]

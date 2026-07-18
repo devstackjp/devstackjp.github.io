@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Works from '../components/Works.astro';
+import Articles from '../components/Articles.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="DevStackは、案件で使えるWeb開発を動く画面と検証済みのコードで届ける技術メディアです。" />
+    <meta name="theme-color" content="#201E28" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png" />
+    <meta property="og:title" content="DevStack | 案件で使うWeb開発" />
+    <meta property="og:description" content="案件で使うWeb開発を、動く画面で。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devstackjp.github.io" />
+    <meta property="og:image" content="https://devstackjp.github.io/assets/banner-x-1500x500.png" />
+    <title>DevStack | 案件で使うWeb開発</title>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <Header />
+    <main id="main">
+      <Hero />
+      <Works />
+      <Articles />
+      <About />
+    </main>
+    <Footer />
+  </body>
+</html>

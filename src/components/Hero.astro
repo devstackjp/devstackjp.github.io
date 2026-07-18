@@ -1,0 +1,30 @@
+---
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/devstackjp' },
+  { label: 'note', href: 'https://note.com/devstackjp' },
+  { label: 'X', href: 'https://x.com/devstackjp' },
+  { label: 'YouTube', href: 'https://youtube.com/@devstackjp' },
+  { label: 'Instagram', href: 'https://instagram.com/devstackjp' },
+];
+---
+
+<section class="hero container" aria-labelledby="hero-title">
+  <div class="terminal-label"><span aria-hidden="true">$</span> whoami</div>
+  <div class="hero-grid">
+    <div class="avatar-stack">
+      <span class="avatar-layer" aria-hidden="true"></span>
+      <img src="/assets/sutakkun-icon-400.png" alt="DevStackの案内役、すたっくん" width="400" height="400" />
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">WEB DEVELOPMENT / PRACTICAL GUIDE</p>
+      <h1 id="hero-title">Dev<span>Stack</span></h1>
+      <p class="lead">案件で使うWeb開発を、<br /><strong>動く画面で。</strong></p>
+      <p class="hero-description">現場で再現できるコードと手順を、検証済みの成果物として積み上げます。</p>
+      <ul class="social-links" aria-label="ソーシャルメディア">
+        {socialLinks.map((link) => (
+          <li><a href={link.href} target="_blank" rel="noreferrer">{link.label}<span aria-hidden="true"> ↗</span></a></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

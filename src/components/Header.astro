@@ -1,0 +1,22 @@
+---
+const navItems = [
+  { label: 'Works', href: '#works' },
+  { label: 'Articles', href: '#articles' },
+  { label: 'About', href: '#about' },
+];
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="DevStack トップへ">
+      <span aria-hidden="true">&gt;_</span> DevStack
+    </a>
+    <nav aria-label="メインナビゲーション">
+      <ul>
+        {navItems.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

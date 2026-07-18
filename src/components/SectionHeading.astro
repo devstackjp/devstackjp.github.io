@@ -1,0 +1,16 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  description: string;
+}
+
+const { number, title, description } = Astro.props;
+const headingId = `${title.toLowerCase()}-title`;
+---
+
+<div class="section-heading">
+  <p class="section-number">LAYER {number}</p>
+  <h2 id={headingId}>{title}</h2>
+  <p>{description}</p>
+</div>
