@@ -1,4 +1,4 @@
-# DevStack | 案件で使うWeb開発
+# DevStack | 現場で使うWeb開発
 
 技術メディア「DevStack」のポートフォリオサイトです。Astro 5で生成する静的サイトとして構成し、GitHub Pagesで公開します。画面はJavaScriptに依存せず、AstroコンポーネントとCSSを中心に実装しています。
 
